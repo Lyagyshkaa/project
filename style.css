@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --bg: #746159;
+    --textm: #e9d5ca;
+    --texth: #c1a495;
+    --can: #947d73;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: var(--bg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: var(--textm);
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.logo span{
+    color: var(--texth)
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--textm);
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: var(--texth);
+    transition: .4s;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+.content h1{
+    color: var(--textm);
+    margin: 20px 0px 0px;
+    font-size: 75px;
+}
+.content h3{
+    color: var(--textm);
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.content span{
+    color: var(--texth)
+}
+.btn{
+    background-color: var(--can);
+    color: var(--textm);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    background-color: var(--texth);
+    transition: .4s;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100vh;
+    padding: 100px 0px;
+    background: #645149;
+    background-size: cover;
+    background-position: center;
+}
+.box{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.skill-name{
+    color: var(--textm);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 14px;
+    background: var(--can);
+    border-radius: 3px;
+}
+.skill-per{
+    position: relative;
+    height: 14px;
+    background: var(--textm);
+    border-radius: 3px;
+}
+.box .name{
+    color: var(--textm);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    border: 1px solid #645149;
+    box-shadow: 0px 1px 0px 0px#e9d5ca;
+}
